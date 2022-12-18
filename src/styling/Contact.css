@@ -26,7 +26,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 75%);
+    /*background-color: rgba(255, 255, 255, 75%);*/
+    box-shadow: 0px 0px 10px 2px darkslategrey;
+
 }
 #outer-profile-img-box:hover{
     box-shadow: 0px 0px 18px 3px cyan;
@@ -49,7 +51,7 @@
     /* justify-content: center; */
     /* align-items: flex-start; */
     margin-top: 11vh;
-    color: black;
+    color: white;
     width: 100vw;
     height: 79vh;
     /* margin-top: 5vh; */
@@ -75,12 +77,12 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     /*background-color: rgba(128, 128, 128, 30%);*/
-    background-color: rgba(255, 255, 255, 75%);
-
+    /*background-color: rgba(255, 255, 255, 75%);*/
     /* background-image: url(../img/glassy-wave-sunset.jpeg); */
     object-fit: cover;
     /* margin-top: -4vh; */
     border-radius: 1rem;
+    box-shadow: 0px 0px 10px 2px darkslategrey;
 }
 
 #email-container:hover{
@@ -126,10 +128,10 @@ button:hover{
     padding: 1rem;
     margin-top: -1rem;
     margin-bottom: -2rem;
+    box-shadow: 0px 0px 10px 2px darkslategrey;
     /* opacity: 58%; */
     /*background-color: rgba(128, 128, 128, 30%);*/
-    background-color: rgba(255, 255, 255, 75%);
-
+    /*background-color: rgba(255, 255, 255, 75%);*/
 }
 
 #about-me-text:hover{
