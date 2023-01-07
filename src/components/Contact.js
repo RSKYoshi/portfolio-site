@@ -3,6 +3,9 @@ import "../styling/Contact.css";
 import yoshiProfilePic from '../img/ryan.png'
 import emailjs from '@emailjs/browser';
 import React, {useRef} from 'react';
+import reCAPTCHA from "react-google-recaptcha"
+
+
 // import {render} from "react-dom";
 
 
@@ -13,6 +16,7 @@ export const Contact = () => {
         function btnAction(){
             // TODO: need to target button using virtual DOM for a sweet css effect.
         }
+
         const form = useRef();
         const sendEmail = (e) => {
             e.preventDefault();
@@ -45,23 +49,24 @@ export const Contact = () => {
                             <br/><br/>
                             <div id="email-container">
                                 <span>
-                                <label htmlFor="name">Name </label>
-                                <input className="input-form-lengths" type="text" name="visitor_name"/>
-                            </span>
-                                <br/><br/>
-                                <span>
-                                <label htmlFor="email">Email &nbsp;</label>
-                                <input className="input-form-lengths" type="text" name="visitor_email"/>
-                            </span>
-                                <br/><br/>
-                                <span>
-                                <label htmlFor="message">Message &nbsp;</label>
-                                <textarea id="message-area" name="message"/>
-                            </span>
-                                <br/><br/>
+                                    <label htmlFor="name">Name </label>
+                                    <input className="input-form-lengths" type="text" name="visitor_name"/>
+                                </span>
+                                    <br/><br/>
+                                    <span>
+                                    <label htmlFor="email">Email &nbsp;</label>
+                                    <input className="input-form-lengths" type="text" name="visitor_email"/>
+                                </span>
+                                    <br/><br/>
+                                    <span>
+                                    <label htmlFor="message">Message &nbsp;</label>
+                                    <textarea id="message-area" name="message"/>
+                                </span>
+                                    <br/><br/>
+                                <reCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY}/>
                                 <span id="submit-button-wrapper">
-                                <input onClick={btnAction} type="submit"/>
-                            </span>
+                                    <input onClick={btnAction} type="submit"/>
+                                </span>
                             </div>
                         </form>
                     </div>
