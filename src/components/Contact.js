@@ -2,8 +2,9 @@
 import "../styling/Contact.css";
 import yoshiProfilePic from '../img/ryan.png'
 import emailjs from '@emailjs/browser';
-import React, {useRef} from 'react';
-import reCAPTCHA from "react-google-recaptcha"
+import React, {Component, useRef} from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
+import {logDOM} from "@testing-library/react";
 
 
 // import {render} from "react-dom";
@@ -11,10 +12,26 @@ import reCAPTCHA from "react-google-recaptcha"
 
 
 // export class Contact extends Component{
+
+
 export const Contact = () => {
 
         function btnAction(){
             // TODO: need to target button using virtual DOM for a sweet css effect.
+        }
+
+        class App extends Component {
+            constructor(props) {
+                super(props);
+                this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
+                this.state = {
+                    isVerified: false
+                }
+            }
+        }
+
+        function recaptchaLoaded(){
+            console.log("captcha loaded successfully");
         }
 
         const form = useRef();
@@ -63,7 +80,12 @@ export const Contact = () => {
                                     <textarea id="message-area" name="message"/>
                                 </span>
                                     <br/><br/>
-                                <reCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY}/>
+                                {/*<reCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY}/>*/}
+                                <ReCAPTCHA
+                                    sitekey={process.env.REACT_APP_SITE_KEY}
+                                    render="explicit"
+                                    onloadCallback={recaptchaLoaded}
+                                />
                                 <span id="submit-button-wrapper">
                                     <input onClick={btnAction} type="submit"/>
                                 </span>
