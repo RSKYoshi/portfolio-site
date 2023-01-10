@@ -20,19 +20,27 @@ export const Contact = () => {
             // TODO: need to target button using virtual DOM for a sweet css effect.
         }
 
+
         class App extends Component {
             constructor(props) {
                 super(props);
                 this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
+                // this.activateSubmitButton = this.activateSubmitButton.bind(this);
                 this.state = {
                     isVerified: false
                 }
+
+
+
+            }
+        }
+        async function activateSubmitButton(){
+            if(this.state.isVerified){
+                let submitBtn = document.getElementById("submitButton")
+                submitBtn.setAttribute("disabled","")
             }
         }
 
-        function recaptchaLoaded(){
-            console.log("captcha loaded successfully");
-        }
 
         const form = useRef();
         const sendEmail = (e) => {
@@ -82,12 +90,13 @@ export const Contact = () => {
                                     <br/><br/>
                                 {/*<reCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY}/>*/}
                                 <ReCAPTCHA
+                                    id="recaptcha"
+                                    // onclick={this.activateSubmitButton}
                                     sitekey={process.env.REACT_APP_SITE_KEY}
                                     render="explicit"
-                                    onloadCallback={recaptchaLoaded}
                                 />
                                 <span id="submit-button-wrapper">
-                                    <input onClick={btnAction} type="submit"/>
+                                    <input id ="submitButton" onClick={btnAction} type="submit" disabled="disabled"/>
                                 </span>
                             </div>
                         </form>
