@@ -96,7 +96,7 @@ export const Contact = () => {
                                     render="explicit"
                                 />
                                 <span id="submit-button-wrapper">
-                                    <input id ="submitButton" onClick={btnAction} type="submit" disabled="disabled"/>
+                                    <input id ="submitButton" onClick={btnAction} type="submit" disabled=""/>
                                 </span>
                             </div>
                         </form>
