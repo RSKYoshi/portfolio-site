@@ -61,6 +61,10 @@ body {
 
 }
 
+#nav-box{
+    box-shadow: yellow 0 0 0 0;
+}
+
 .nav ul {
     padding: 0;
     margin: 0;

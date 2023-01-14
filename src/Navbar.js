@@ -16,15 +16,15 @@ export default function Navbar (){
     }
     return (
         <nav className="nav">
-            <Link to="/" id="title">
-                <div id="logo-circle">
-                    <div id="logo-text" onClick={logoShrink}>Y</div>
-                </div>
-            </Link>
-            <ul>
-                {/*<CustomLink to="/projects">Projects</CustomLink>*/}
-                <CustomLink to="/contact">Contact</CustomLink>
-            </ul>
+                <Link to="/" id="title">
+                    <div id="logo-circle">
+                        <div id="logo-text" onClick={logoShrink}>Y</div>
+                    </div>
+                </Link>
+                <ul id="contact-link">
+                    {/*<CustomLink to="/projects">Projects</CustomLink>*/}
+                    <CustomLink to="/contact">Contact</CustomLink>
+                </ul>
         </nav>
     )
 }

@@ -52,7 +52,7 @@
     display: table;
     /* justify-content: center; */
     /* align-items: flex-start; */
-    margin-top: 11vh;
+    margin-top: 2vh;
     color: white;
     width: 100vw;
     height: 57vh;
@@ -205,7 +205,7 @@ button:hover{
         display: table;
         /* justify-content: center; */
         /* align-items: flex-start; */
-        margin-top: 11vh;
+        margin-top: 2vh;
         color: white;
         width: 100vw;
         height: 57vh;
