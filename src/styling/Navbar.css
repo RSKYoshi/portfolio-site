@@ -76,28 +76,35 @@ body {
 .nav a {
     /*color: inherit;*/
     /*color: #38BDDF;*/
-    color: #25e5fffc;
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0.25rem;
+    /*color: #25e5fffc;*/
+    /*text-decoration: none;*/
+    /*height: 100%;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*padding: 0.25rem;*/
 
 
 }
 .nav li.active {
-    background-color: mediumpurple;
+    background-color: blue;
 }
 .nav li:hover{
-    background-color: #D62D2D;
+    /*background-color: #D62D2D;*/
     /*border: 1px solid red;*/
 }
 
 #title {
     font-size: 2rem;
-    margin-left: 1vw;
-    justify-content: end;
+    /*margin-left: 1vw;*/
+    align-items: center;
     box-shadow: 2px 3px 4px 1px black;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 6vh;
+    background-color: rgba(255, 255, 255, 75%);
+
+
 }
 #title:hover{
     /*animation: spin 3s infinite;*/
@@ -107,10 +114,10 @@ body {
     /*border-radius: 1rem;*/
     /*background-color: transparent;*/
 
-    font-size: 2rem;
-    margin-left: 1vw;
-    justify-content: end;
-    box-shadow: 0px -1px 1px 1px black;
+    /*font-size: 2rem;*/
+    /*margin-left: 1vw;*/
+    /*justify-content: end;*/
+    /*box-shadow: 0px -1px 1px 1px black;*/
 }
 
 
@@ -210,10 +217,10 @@ body {
 
     }
     .nav li.active {
-        background-color: mediumpurple;
+        background-color: blue;
     }
     .nav li:hover{
-        background-color: #D62D2D;
+        background-color: blue;
         /*border: 1px solid red;*/
     }
 

@@ -15,8 +15,8 @@ export default function Navbar (){
 
     }
     return (
-        <nav className="nav">
-                <Link to="/" id="title">
+        <nav id = "title" className="nav">
+                <Link to="/" id = "">
                     <div id="logo-circle">
                         <div id="logo-text" onClick={logoShrink}>Y</div>
                     </div>
