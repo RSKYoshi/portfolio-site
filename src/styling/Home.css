@@ -186,23 +186,23 @@ body{
 
 #devInfo{
     width: 100vw;
-    /*margin-bottom: 16vh;*/
+     height: 3vh;
+    /* margin-bottom: 16vh; */
     display: block;
     justify-content: center;
-
-    font: 3rem/1vh FontSiteSansBoldCondensed, Verdana, Helvetica, Arial, sans-serif;
+    font: 2rem FontSiteSansBoldCondensed, Verdana, Helvetica, Arial, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
-    /*color: #fff;*/
-    /*color: #38BDDF;*/
+    /* color: #fff; */
+    /* color: #38BDDF; */
     color: #25e5fffc;
     margin: 10rem;
     transform: rotateX(52deg);
-    /*mess with this effect for 3d transitioning, promising*/
-    /*text-shadow: -1px 41px 8px;*/
-    /*animation: fadeIn 5s;*/
+    text-shadow: -1px 41px 8px;
+    /* animation: fadeIn 5s; */
+    overflow-wrap: normal;
 }
 
 
