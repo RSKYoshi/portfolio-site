@@ -1,12 +1,12 @@
 // import React, {Component} from 'react';
-import "../styling/Contact.css";
+import '../styling/Contact.css';
 import yoshiProfilePic from '../img/ryan.png'
 import emailjs from '@emailjs/browser';
 import React, {Component, useRef} from 'react';
-import ReCAPTCHA from "react-google-recaptcha";
-import {logDOM} from "@testing-library/react";
-
-
+import ReCAPTCHA from 'react-google-recaptcha';
+import {REACT_APP_SITE_KEY} from "../constants/api-keys";
+// import {logDOM} from "@testing-library/react";
+// import REACT_APP_SITE_KEY from 'api-keys.js'
 // import {render} from "react-dom";
 
 
@@ -92,7 +92,8 @@ export const Contact = () => {
                                 <ReCAPTCHA
                                     id="recaptcha"
                                     // onclick={this.activateSubmitButton}
-                                    sitekey={process.env.REACT_APP_SITE_KEY}
+                                    // sitekey= "6LdDFbUjAAAAAHCwJxhL-7sNqEOW_mg7-evxqGKj"
+                                    sitekey={REACT_APP_SITE_KEY}
                                     render="explicit"
                                 />
                                 <span id="submit-button-wrapper">
