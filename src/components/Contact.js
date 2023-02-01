@@ -93,7 +93,8 @@ export const Contact = () => {
                                     id="recaptcha"
                                     // onclick={this.activateSubmitButton}
                                     // sitekey= "6LdDFbUjAAAAAHCwJxhL-7sNqEOW_mg7-evxqGKj"
-                                    sitekey={REACT_APP_SITE_KEY}
+                                    // sitekey={REACT_APP_SITE_KEY}
+                                    sitekey={process.env.REACT_APP_SITE_KEY}
                                     render="explicit"
                                 />
                                 <span id="submit-button-wrapper">
