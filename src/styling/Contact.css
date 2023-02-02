@@ -23,7 +23,7 @@
 #outer-profile-img-box{
     border: 2px solid whitesmoke;
     height: 8rem;
-    width: 21.5rem;
+    /*width: 21.5rem;*/
     border-radius: 2rem;
     display: flex;
     align-items: center;
@@ -137,19 +137,12 @@ label{
     /* opacity: 58%; */
     /* background-color: rgba(128, 128, 128, 30%); */
     /* background-color: rgba(255, 255, 255, 75%); */
-    width: 21.5rem;
+    /*width: 21.5rem;*/
 }
 
 #about-me-text:hover{
     box-shadow: 0px 0px 18px 3px cyan;
 }
-
-
-
-
-
-
-
 
 
 /*ipads,tablets*/
@@ -181,7 +174,7 @@ label{
     #outer-profile-img-box{
         border: 2px solid whitesmoke;
         height: 11rem;
-        width: 29.4rem;
+        /*width: 29.4rem;*/
         border-radius: 2rem;
         display: flex;
         align-items: center;
@@ -210,7 +203,7 @@ label{
         display: flex;
         /* justify-content: center; */
         /* align-items: flex-start; */
-        margin-top: 9vh;
+        margin-top: 3vh;
         color: white;
         /* width: 100vw; */
         /* height: 56vh; */
@@ -224,7 +217,7 @@ label{
         /* overflow: inherit; */
         box-shadow: 0px 0px 10px 2px darkslategrey;
         /* justify-items: legacy; */
-        height: 90.5vh;
+        height: 95.5vh;
         margin-left: 36vw;
     }
 
@@ -234,7 +227,7 @@ label{
         /*border-radius: 7px;*/
         /* padding: 1rem; */
         padding-left: 1rem;
-        padding-right: 7rem;
+        /*padding-right: 7rem;*/
         padding-top: 1rem;
         padding-bottom: 1rem;
         /*background-color: rgba(128, 128, 128, 30%);*/
@@ -251,11 +244,11 @@ label{
     }
 
     .input-form-lengths{
-        width: 14rem;
+        width: 23rem;
         overflow: visible;
     }
     #message-area{
-        width: 21rem;
+        width: 27rem;
         height: 10rem;
         min-height: 10rem;
         min-width: 21rem;
@@ -277,6 +270,23 @@ label{
         transition: .2s ease-in-out;
     }
     button:hover{
+        /*border: 1px solid green; */
+        border-radius: 7px;
+        box-shadow: 0px 3px 12px 0px cyan;
+        transform: translate(0px, -2px);
+        transition: .2s ease-in-out;
+    }
+    #submitButton {
+        background: grey;
+        padding: 0.4rem 12.2rem;
+        color: whitesmoke;
+        border: 0;
+        border-radius: 7px;
+        transition: .2s ease-in-out;
+        margin-top: 0.5rem;
+        height: 3rem;
+    }
+    #submitButton:hover{
         /*border: 1px solid green; */
         border-radius: 7px;
         box-shadow: 0px 3px 12px 0px cyan;
