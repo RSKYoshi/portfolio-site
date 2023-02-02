@@ -3,7 +3,6 @@
 /*default is mobile, made for 320px-480px*/
 
 
-
 #contact-background{
     /*background-image: url('../img/moving-water-gif-bg.gif');*/
     background-image: url('../img/glassy-wave-sunset.jpeg');
@@ -23,15 +22,14 @@
 /*}*/
 #outer-profile-img-box{
     border: 2px solid whitesmoke;
-    height: 11rem;
-    width: 29.4rem;
+    height: 8rem;
+    width: 21.5rem;
     border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-color: rgba(255, 255, 255, 75%);*/
+    /* background-color: rgba(255, 255, 255, 75%); */
     box-shadow: 0px 0px 10px 2px darkslategrey;
-
 }
 #outer-profile-img-box:hover{
     box-shadow: 0px 0px 18px 3px cyan;
@@ -44,47 +42,49 @@
 }
 
 #yoshi-img{
-    height: 10rem;
+    height: 7rem;
     width: auto;
-    border-radius: 6rem;
+    border-radius: 3rem;
 }
-#infoContainer{
-    display: table;
+#infoContainer {
+    display: flex;
     /* justify-content: center; */
     /* align-items: flex-start; */
-    margin-top: 2vh;
+    margin-top: 9vh;
     color: white;
     width: 100vw;
-    height: 57vh;
-    /* margin-top: 5vh; */
-    /* position: relative; */
-    margin-left: 28vw;
+    /* height: 56vh; */
+    /* margin-top: 5vh /* position: relative; */
+    /* margin-left: 5vw; */
     border: 1px solid whitesmoke;
     background-color: transparent;
-
     padding: 2rem;
     border-radius: 2rem;
     /* margin-bottom: 49vh; */
-    overflow: inherit;
+    /* overflow: inherit; */
     box-shadow: 0px 0px 10px 2px darkslategrey;
+    /* justify-items: legacy; */
+    height: 90.5vh;
 }
+
 
 
 #email-container{
     border: 3px solid whitesmoke;
-    /*border-radius: 7px;*/
+    /* border-radius: 7px; */
     /* padding: 1rem; */
     padding-left: 1rem;
     padding-right: 7rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    /*background-color: rgba(128, 128, 128, 30%);*/
-    /*background-color: rgba(255, 255, 255, 75%);*/
+    /* background-color: rgba(128, 128, 128, 30%); */
+    /* background-color: rgba(255, 255, 255, 75%); */
     /* background-image: url(../img/glassy-wave-sunset.jpeg); */
     object-fit: cover;
-    /* margin-top: -4vh; */
     border-radius: 1rem;
     box-shadow: 0px 0px 10px 2px darkslategrey;
+    width: 21.5rem;
+    height: 29rem;
 }
 
 #email-container:hover{
@@ -96,10 +96,10 @@
     overflow: visible;
 }
 #message-area{
-    width: 21rem;
-    height: 10rem;
-    min-height: 10rem;
-    min-width: 21rem;
+    width: 19rem;
+    height: 7rem;
+    min-height: 6rem;
+    min-width: 16rem;
 }
 label{
     display: block;
@@ -109,15 +109,18 @@ label{
     height: 5vh;
     width: 7vw;
 }
-button {
-    background: lightslategrey;
-    padding: 0.8em 1em;
+
+#submitButton {
+    background: grey;
+    padding: 0.4rem 8.2rem;
     color: whitesmoke;
     border: 0;
     border-radius: 7px;
     transition: .2s ease-in-out;
+    margin-top: 0.5rem;
+    height: 2rem;
 }
-button:hover{
+#submitButton:hover{
     /*border: 1px solid green; */
     border-radius: 7px;
     box-shadow: 0px 3px 12px 0px cyan;
@@ -132,8 +135,9 @@ button:hover{
     margin-bottom: -2rem;
     box-shadow: 0px 0px 10px 2px darkslategrey;
     /* opacity: 58%; */
-    /*background-color: rgba(128, 128, 128, 30%);*/
-    /*background-color: rgba(255, 255, 255, 75%);*/
+    /* background-color: rgba(128, 128, 128, 30%); */
+    /* background-color: rgba(255, 255, 255, 75%); */
+    width: 21.5rem;
 }
 
 #about-me-text:hover{
@@ -147,11 +151,12 @@ button:hover{
 
 
 
+
 /*ipads,tablets*/
 @media only screen and (max-width: 768px) and (min-width:481px){
 }
 /*small screens, laptops*/
-@media only screen and (max-width: 1024px) and (min-width:769px){
+@media only screen and (max-width: 1680px) and (min-width:769px){
 
 
 
@@ -202,24 +207,25 @@ button:hover{
         border-radius: 6rem;
     }
     #infoContainer{
-        display: table;
+        display: flex;
         /* justify-content: center; */
         /* align-items: flex-start; */
-        margin-top: 2vh;
+        margin-top: 9vh;
         color: white;
-        width: 100vw;
-        height: 57vh;
-        /* margin-top: 5vh; */
-        /* position: relative; */
-        margin-left: 28vw;
+        /* width: 100vw; */
+        /* height: 56vh; */
+        /* margin-top: 5vh /* position: relative; */
+        /* margin-left: 5vw; */
         border: 1px solid whitesmoke;
         background-color: transparent;
-
         padding: 2rem;
         border-radius: 2rem;
         /* margin-bottom: 49vh; */
-        overflow: inherit;
+        /* overflow: inherit; */
         box-shadow: 0px 0px 10px 2px darkslategrey;
+        /* justify-items: legacy; */
+        height: 90.5vh;
+        margin-left: 36vw;
     }
 
 
