@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.ba8568cf.chunk.css",
-  "main.js": "/static/js/main.1a127e2b.chunk.js",
-  "main.js.map": "/static/js/main.1a127e2b.chunk.js.map",
+  "main.css": "/static/css/main.5b8e4fba.chunk.css",
+  "main.js": "/static/js/main.472beaa8.chunk.js",
+  "main.js.map": "/static/js/main.472beaa8.chunk.js.map",
   "static/js/1.9187859c.chunk.js": "/static/js/1.9187859c.chunk.js",
   "static/js/1.9187859c.chunk.js.map": "/static/js/1.9187859c.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -24,8 +24,8 @@
   "static/media/react-logo.png": "/static/media/react-logo.04557c1b.png",
   "static/media/spring-logo.png": "/static/media/spring-logo.c973c790.png",
   "static/media/ryan.png": "/static/media/ryan.36dbab9a.png",
-  "static/css/main.ba8568cf.chunk.css.map": "/static/css/main.ba8568cf.chunk.css.map",
+  "static/css/main.5b8e4fba.chunk.css.map": "/static/css/main.5b8e4fba.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.c21c2c8319c225fa433236ad9d10c9b9.js": "/precache-manifest.c21c2c8319c225fa433236ad9d10c9b9.js",
+  "precache-manifest.442c2904c194d5214c0fa0edf0f6acfb.js": "/precache-manifest.442c2904c194d5214c0fa0edf0f6acfb.js",
   "service-worker.js": "/service-worker.js"
 }
