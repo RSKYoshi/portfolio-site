@@ -10,7 +10,8 @@
 #main-container{
     display: flex;
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
+    overflow: scroll;
 }
 /*#container-etc{*/
 /*    display: flex;*/
@@ -56,15 +57,17 @@
     /* height: 56vh; */
     /* margin-top: 5vh /* position: relative; */
     /* margin-left: 5vw; */
-    border: 1px solid whitesmoke;
     background-color: transparent;
-    padding: 2rem;
+    padding: 1rem 1rem 0.5rem;
+    margin-bottom: 0.4rem;
+    border: 1px solid whitesmoke;
     border-radius: 2rem;
     /* margin-bottom: 49vh; */
     /* overflow: inherit; */
     box-shadow: 0px 0px 10px 2px darkslategrey;
     /* justify-items: legacy; */
-    height: 90.5vh;
+    height: 91.5vh;
+    /*padding-right: 1vw;*/
 }
 
 
@@ -73,18 +76,15 @@
     border: 3px solid whitesmoke;
     /* border-radius: 7px; */
     /* padding: 1rem; */
-    padding-left: 1rem;
-    padding-right: 7rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 7rem 1rem 1rem;
     /* background-color: rgba(128, 128, 128, 30%); */
     /* background-color: rgba(255, 255, 255, 75%); */
     /* background-image: url(../img/glassy-wave-sunset.jpeg); */
     object-fit: cover;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px 2px darkslategrey;
-    width: 21.5rem;
-    height: 29rem;
+    width: 22rem;
+    height: 27.5rem;
 }
 
 #email-container:hover{
@@ -111,6 +111,7 @@ label{
 }
 
 #submitButton {
+
     background: grey;
     padding: 0.4rem 8.2rem;
     color: whitesmoke;
@@ -118,14 +119,32 @@ label{
     border-radius: 7px;
     transition: .2s ease-in-out;
     margin-top: 0.5rem;
-    height: 2rem;
+    height: 2.5rem;
+
+    /*border: 1px solid green;*/
+    /*border-radius: 7px;*/
+    /* box-shadow: 0px 3px 12px 0px cyan; */
+    /*box-shadow: 1px 3px 3px 70px transparent;*/
+    box-shadow: 0px 0px 0px 0px;
+
+    /*transform: translate(0px, -2px);*/
+    /*transition: .2s ease-in-out;*/
+
 }
 #submitButton:hover{
-    /*border: 1px solid green; */
+    background: grey;
+    padding: 0.4rem 8.2rem;
+    color: whitesmoke;
+    border: 0;
     border-radius: 7px;
-    box-shadow: 0px 3px 12px 0px cyan;
-    transform: translate(0px, -2px);
     transition: .2s ease-in-out;
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    /*transform: translate(0px, -2px);*/
+    /*box-shadow: 0px 0px 0px 0px;*/
+    box-shadow: 1px 3px 3px 70px transparent;
+
+
 }
 #about-me-text{
     border: 2px solid whitesmoke;
