@@ -70,10 +70,6 @@ export class Home extends Component{
                         // devInfo.style = "color: yellow"
                         // devInfo.style = "animation: fadeOut 2s;"
                         // devInfo.innerHTML = "Full Stack Developer";
-
-
-
-
                     },2000) //after 2 seconds, change text
                     // if(devInfo.innerHTML === "Ryan Yoshimura"){
                     //     devInfo.innerHTML = "Full Stack Developer"

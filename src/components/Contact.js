@@ -29,9 +29,6 @@ export const Contact = () => {
                 this.state = {
                     isVerified: false
                 }
-
-
-
             }
         }
         async function activateSubmitButton(){
