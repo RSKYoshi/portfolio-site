@@ -18,6 +18,7 @@ export const Contact = () => {
 
         function btnAction(){
             // TODO: need to target button using virtual DOM for a sweet css effect.
+        //    onclick, make button look like it got pressed
         }
 
 
