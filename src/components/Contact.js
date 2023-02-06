@@ -18,7 +18,17 @@ export const Contact = () => {
 
         function btnAction(){
             // TODO: need to target button using virtual DOM for a sweet css effect.
-        //    onclick, make button look like it got pressed
+        //    onclick, make button look like it got pressed, then reset to original style
+        //    onclick, activate
+            const submitButton = document.getElementById("submitButton");
+            submitButton.style.boxShadow = 'inset 0px 9px 15px 0px black';
+            submitButton.style.border = '1px solid black'
+            submitButton.style.boxShadow = 'inset 0px 9px 15px 0px black';
+        }
+
+        function btnAction2(){
+            const submitButton = document.getElementById("submitButton");
+            submitButton.style.boxShadow = 'inset 0px -4px 15px 0px black';
         }
 
 
@@ -96,7 +106,7 @@ export const Contact = () => {
                                     render="explicit"
                                 />
                                 <span id="submit-button-wrapper">
-                                    <input id ="submitButton" onClick={btnAction} type="submit" disabled=""/>
+                                    <input id ="submitButton" onMouseDown={btnAction} onMouseUp={btnAction2} type="submit" disabled=""/>
                                 </span>
                             </div>
                         </form>
