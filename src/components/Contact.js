@@ -106,7 +106,7 @@ export const Contact = () => {
                                     render="explicit"
                                 />
                                 <span id="submit-button-wrapper">
-                                    <input id ="submitButton" onMouseDown={btnAction} onMouseUp={btnAction2} type="submit" disabled=""/>
+                                    <input id ="submitButton" onTouchStart={btnAction} onTouchEndCapture={btnAction} onMouseDown={btnAction} onMouseUp={btnAction2} type="submit" disabled=""/>
                                 </span>
                             </div>
                         </form>

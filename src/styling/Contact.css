@@ -112,10 +112,10 @@ label{
 
 #submitButton {
 
-    background: grey;
+    background: rgba(107, 107, 107, 0.62);
     padding: 0.4rem 8.2rem;
     color: whitesmoke;
-    border: 0;
+    /*border: 0;*/
     border-radius: 7px;
     transition: .2s ease-in-out;
     margin-top: 0.5rem;
@@ -125,24 +125,39 @@ label{
     /*border-radius: 7px;*/
     /* box-shadow: 0px 3px 12px 0px cyan; */
     /*box-shadow: 1px 3px 3px 70px transparent;*/
-    box-shadow: 0 0 0 0;
+    /*box-shadow: 0 0 0 0;*/
 
     /*transform: translate(0px, -2px);*/
     /*transition: .2s ease-in-out;*/
+    width: 82.5vw;
+    /*box-shadow: 1px 1px 1px 2px black;*/
+
+
+    /*color: green; */
+    /*background-color: grey;*/
+    border: 1px solid black;
+    box-shadow: inset 0px -4px 15px 0px black;
+
 }
 
 #submitButton:hover{
-    background: grey;
-    padding: 0.4rem 8.2rem;
-    color: whitesmoke;
-    border: 0;
-    border-radius: 7px;
-    transition: .2s ease-in-out;
-    margin-top: 0.5rem;
-    height: 2.5rem;
+    background: rgba(107, 107, 107, 0.62);
+    /*border: 1px solid black;*/
+    /*box-shadow: inset 0px -4px 15px 0px black;*/
+
+    /*padding: 0.4rem 8.2rem;*/
+    /*color: whitesmoke;*/
+    /*border: 0;*/
+    /*border-radius: 7px;*/
+    /*transition: .2s ease-in-out;*/
+    /*margin-top: 0.5rem;*/
+    /*height: 2.5rem;*/
     /*transform: translate(0px, -2px);*/
     /*box-shadow: 0px 0px 0px 0px;*/
-    box-shadow: 1px 3px 3px 70px transparent;
+    /*box-shadow: 1px 3px 3px 70px transparent;*/
+
+    box-shadow: inset 0px -4px 15px 0px black;
+    border: 1px solid black;
 }
 
 #about-me-text{
@@ -355,7 +370,198 @@ label{
 
 }
 /*desktops, large screens*/
-@media only screen and (max-width: 1200px) and (min-width:1025px){
+@media only screen and (max-width: 2560px) and (min-width:1681px){
+
+
+    #contact-background{
+        /*background-image: url('../img/moving-water-gif-bg.gif');*/
+        background-image: url('../img/glassy-wave-sunset.jpeg');
+
+    }
+    #main-container{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+    /*#container-etc{*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    height: 50vh;*/
+    /*    width: 25vw;*/
+    /*    margin: 7rem;*/
+    /*}*/
+    #outer-profile-img-box{
+        border: 2px solid whitesmoke;
+        height: 11rem;
+        /*width: 29.4rem;*/
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*background-color: rgba(255, 255, 255, 75%);*/
+        box-shadow: 0px 0px 10px 2px darkslategrey;
+
+    }
+    #outer-profile-img-box:hover{
+        box-shadow: 0px 0px 18px 3px cyan;
+    }
+    #profile-img-box{
+        /*border: 1px solid whitesmoke;*/
+        /*height: 2rem;*/
+        /*width: 4rem;*/
+        display: flex;
+    }
+
+
+    #yoshi-img{
+        height: 10rem;
+        width: auto;
+        border-radius: 6rem;
+    }
+    #infoContainer {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: flex-start; */
+        margin-top: 9vh;
+        color: white;
+        width: 21vw;
+        /* height: 30vh; */
+        /* margin-top: 5vh /* position: relative; */
+        margin-left: 16vw;
+        background-color: transparent;
+        padding: 1rem 1rem 0.5rem;
+        margin-bottom: 0.4rem;
+        border: 1px solid whitesmoke;
+        border-radius: 2rem;
+        /* margin-bottom: 49vh; */
+        /* overflow: inherit; */
+        box-shadow: 0 0 10px 2px darkslategrey;
+        /* justify-items: legacy; */
+        height: 68.5vh;
+    }
+
+
+    #email-container {
+        border: 3px solid whitesmoke;
+        /* border-radius: 7px; */
+        /* padding: 1rem; */
+        padding: 1rem 7rem 1rem 1rem;
+        /* background-color: rgba(128, 128, 128, 30%); */
+        /* background-color: rgba(255, 255, 255, 75%); */
+        /* background-image: url(../img/glassy-wave-sunset.jpeg); */
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 10px 2px darkslategrey;
+        width: 31.5rem;
+        height: 34.5rem;
+    }
+
+    #email-container:hover{
+        box-shadow: 0px 0px 18px 3px cyan;
+    }
+
+    .input-form-lengths{
+        width: 23rem;
+        overflow: visible;
+    }
+    #message-area{
+        width: 27rem;
+        height: 10rem;
+        min-height: 10rem;
+        min-width: 21rem;
+    }
+    label{
+        display: block;
+        margin-bottom: .2em;
+    }
+    #submit-button-wrapper{
+        height: 5vh;
+        width: 7vw;
+    }
+    /*button {*/
+    /*    background: lightslategrey;*/
+    /*    padding: 0.8em 1em;*/
+    /*    color: whitesmoke;*/
+    /*    border: 0;*/
+    /*    border-radius: 7px;*/
+    /*    transition: .2s ease-in-out;*/
+    /*}*/
+    /*button:hover{*/
+    /*    !*border: 1px solid green; *!*/
+    /*    border-radius: 7px;*/
+    /*    box-shadow: 0px 3px 12px 0px cyan;*/
+    /*    transform: translate(0px, -2px);*/
+    /*    transition: .2s ease-in-out;*/
+    /*}*/
+    #submitButton {
+        background: rgba(107, 107, 107, 0.62);
+        padding: 0.4rem 8.2rem;
+        color: whitesmoke;
+        /* border: 0; */
+        border-radius: 7px;
+        transition: .2s ease-in-out;
+        margin-top: 2rem;
+        height: 2.5rem;
+        /* border: 1px solid green; */
+        /* border-radius: 7px; */
+        /* box-shadow: 0px 3px 12px 0px cyan; */
+        /* box-shadow: 1px 3px 3px 70px transparent; */
+        /* box-shadow: 0 0 0 0; */
+        /* transform: translate(0px, -2px); */
+        /* transition: .2s ease-in-out; */
+        width: 18vw;
+        /* box-shadow: 1px 1px 1px 2px black; */
+        /* color: green; */
+        /* background-color: grey; */
+        border: 1px solid black;
+        box-shadow: inset 0px -4px 15px 0px black;
+    }
+
+    #submitButton:hover{
+        background: rgba(107, 107, 107, 0.62);
+        /*border: 1px solid black;*/
+        /*box-shadow: inset 0px -4px 15px 0px black;*/
+
+        /*padding: 0.4rem 8.2rem;*/
+        /*color: whitesmoke;*/
+        /*border: 0;*/
+        /*border-radius: 7px;*/
+        /*transition: .2s ease-in-out;*/
+        /*margin-top: 0.5rem;*/
+        /*height: 2.5rem;*/
+        /*transform: translate(0px, -2px);*/
+        /*box-shadow: 0px 0px 0px 0px;*/
+        /*box-shadow: 1px 3px 3px 70px transparent;*/
+
+        box-shadow: inset 0px -4px 15px 0px black;
+        border: 1px solid black;
+
+    }
+    #submitButton:focus{
+        /*color: green;*/
+        /*background-color: green;*/
+        /*border: 1px solid black;*/
+        /*box-shadow: inset 1px 3px 0 black;*/
+        /*box-shadow: inset 0px -4px 15px 0px black;*/
+
+    }
+    #about-me-text{
+        border: 2px solid whitesmoke;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+        box-shadow: 0px 0px 10px 2px darkslategrey;
+        /* opacity: 58%; */
+        /*background-color: rgba(128, 128, 128, 30%);*/
+        /*background-color: rgba(255, 255, 255, 75%);*/
+    }
+
+    #about-me-text:hover{
+        box-shadow: 0px 0px 18px 3px cyan;
+    }
+
 }
 /*extra large screens, tv's*/
 @media only screen and (min-width:1201px){
