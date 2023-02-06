@@ -310,7 +310,10 @@ label{
     }
 
     #submitButton:hover{
-        /*background: green;*/
+        background: rgba(107, 107, 107, 0.62);
+        border: 1px solid black;
+        box-shadow: inset 0px -4px 15px 0px black;
+
         /*padding: 0.4rem 8.2rem;*/
         /*color: whitesmoke;*/
         /*border: 0;*/
@@ -325,8 +328,8 @@ label{
     #submitButton:focus{
         /*color: green;*/
         /*background-color: green;*/
-        border: 1px solid black;
-        box-shadow: inset 1px 3px 0 black;
+        /*border: 1px solid black;*/
+        /*box-shadow: inset 1px 3px 0 black;*/
 
     }
     #about-me-text{
