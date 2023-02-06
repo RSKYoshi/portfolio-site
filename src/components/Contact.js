@@ -64,7 +64,7 @@ export const Contact = () => {
         };
         return (
             // <div id="contact-background">
-            <div id="contact-background">
+            <div id="contact-background" onMouseUp={btnAction2}>
             <main id="main-container">
                     <div id="infoContainer">
                         {/*<div id="container-etc"></div>*/}
