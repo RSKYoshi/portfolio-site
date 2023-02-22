@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import React, {Component, useRef} from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import {REACT_APP_SITE_KEY} from "../constants/api-keys";
+// import {REACT_APP_SITE_KEY} from "../constants/api-keys";
 // import {logDOM} from "@testing-library/react";
 // import REACT_APP_SITE_KEY from 'api-keys.js'
 // import {render} from "react-dom";
@@ -31,7 +32,6 @@ export const Contact = () => {
             submitButton.style.boxShadow = 'inset 0px -4px 15px 0px black';
         }
 
-
         class App extends Component {
             constructor(props) {
                 super(props);
@@ -48,7 +48,6 @@ export const Contact = () => {
                 submitBtn.setAttribute("disabled","")
             }
         }
-
 
         const form = useRef();
         const sendEmail = (e) => {
@@ -83,17 +82,17 @@ export const Contact = () => {
                             <div id="email-container">
                                 <span>
                                     <label htmlFor="name">Name </label>
-                                    <input className="input-form-lengths" type="text" name="visitor_name"/>
+                                    <input className="input-form-lengths" type="text" name="visitor_name" required="true"/>
                                 </span>
                                     <br/><br/>
                                     <span>
                                     <label htmlFor="email">Email &nbsp;</label>
-                                    <input className="input-form-lengths" type="text" name="visitor_email"/>
+                                    <input className="input-form-lengths" type="text" name="visitor_email" required="true"/>
                                 </span>
                                     <br/><br/>
                                     <span>
                                     <label htmlFor="message">Message &nbsp;</label>
-                                    <textarea id="message-area" name="message"/>
+                                    <textarea id="message-area" name="message" required="true"/>
                                 </span>
                                     <br/><br/>
                                 {/*<reCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY}/>*/}
@@ -102,7 +101,7 @@ export const Contact = () => {
                                     // onclick={this.activateSubmitButton}
                                     // sitekey= "6LdDFbUjAAAAAHCwJxhL-7sNqEOW_mg7-evxqGKj"
                                     // sitekey={REACT_APP_SITE_KEY}
-                                    sitekey={process.env.REACT_APP_SITE_KEY}
+                                    sitekey={REACT_APP_SITE_KEY}
                                     render="explicit"
                                 />
                                 <span id="submit-button-wrapper">
